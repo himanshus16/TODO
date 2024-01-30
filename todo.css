@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+.box{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 80px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.box h2 img{
+    width: 30px;
+    margin: 0 0 0 15px;
+}
+.box h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #0b5563;
+}
+.add-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;border-radius: 20px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+#input-val{
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 12px;
+    font-weight: 15px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#validation{
+    width: fit-content;
+    height: 15px;
+    margin: auto;
+}
+ul li{ 
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    top: 12px;
+    left: 9px;
+}
+#validation{
+    color: #ff5945;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background: url(checked.png);
+    background-size: cover;
+}
+ul li span img{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    /* border: 1px solid black; */
+}
+ul li span img:hover{
+    background: #edeef0;
+}
+#clearlist{
+    padding: 10px;
+    margin-top: 50px;
+    background-color: #153677;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+#clearlist:hover{
+    background-color: #0b5563;
+}
